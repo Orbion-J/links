@@ -33,11 +33,20 @@ Nested declaration and instanciation
 filemode : true
 stdout : fun : () {E:() {}-> Int,E':(Int) {}-> ()}-> ()
 
-Recursive alias
+Recursive alias [1]
 ./tests/effectname/recursive.links
 filemode : true
-stderr : @.*
-exit : 1
+stdout : () : ()
+
+Recursive alias [2]
+./tests/effectname/recursive2.links
+filemode : true
+stdout : () : ()
+
+Recursive alias [3]
+./tests/effectname/recursive3.links
+filemode : true
+stdout : () : ()
 
 Effectname aliases in handlers signatures
 ./tests/effectname/handler.links

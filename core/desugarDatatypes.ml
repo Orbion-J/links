@@ -584,7 +584,6 @@ object (self)
     | b -> super#bindingnode b
 
 
-
   method! sentence =
     (* return any aliases bound to the interactive loop so that they
        are available to future input.  The default definition will

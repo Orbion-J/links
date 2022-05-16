@@ -131,6 +131,7 @@ module Untyped = struct
        ; (module Collect_FFI_Files)
        ; only_if Basicsettings.Sessions.exceptions_enabled (module DesugarSessionExceptions)
        ; (module DesugarLAttributes)
+       ; (module DesugarEffectAlias)
        ; (module LiftRecursive)
        ; (module DesugarTypeVariables)
        ; (module DesugarEffects)
